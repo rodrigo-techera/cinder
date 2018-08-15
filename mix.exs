@@ -20,7 +20,7 @@ defmodule Cinder.Mixfile do
   def application do
     [
       mod: {Cinder, []},
-      extra_applications: [:logger]
+      extra_applications: [:logger, :comeonin]
     ]
   end
 
@@ -40,7 +40,8 @@ defmodule Cinder.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:comeonin, "~> 2.3"}
     ]
   end
 
